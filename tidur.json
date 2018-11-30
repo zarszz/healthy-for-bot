@@ -1,0 +1,43 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "MANFAAT TIDUR",
+        "align" : "center",
+        "weight": "bold"
+      }
+    ]
+  },
+  "hero": {
+    "type": "image",
+    "url": "https://i.ibb.co/zr7Rx8d/sleep.jpg",
+    "size": "full",
+    "aspectRatio": "4:3",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "TIDUR ITU PENTING !!!",
+        "align" : "center",
+        "size": "sm",
+        "color": "#c9302c",
+        "weight": "bold"
+      },
+      {
+        "type": "text",
+        "text": "Tidur merupakan hal yang seharusnya wajib dilakukan semua manusia, tidur yang cukup memiliki beberapa manfaat seperti meningkatkan kapasitas memory, memperpanjang umur hidup, meningkatkan kualitas hidup, dan mengurangi stress ataupun depresi",
+        "size": "sm",
+        "wrap": true,
+        "margin": "lg"
+      }
+    ]
+  }
+}

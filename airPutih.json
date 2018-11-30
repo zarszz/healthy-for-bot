@@ -1,0 +1,43 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "MANFAAT AIR PUTIH",
+        "align" : "center",
+        "weight": "bold"
+      }
+    ]
+  },
+  "hero": {
+    "type": "image",
+    "url": "https://i.ibb.co/42q9Vzg/air-putih.jpg",
+    "size": "full",
+    "aspectRatio": "4:3",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Kenapa sih harus minum air putih ??",
+        "align" : "center",
+        "size": "sm",
+        "color": "#3498db",
+        "weight": "bold"
+      },
+      {
+        "type": "text",
+        "text": "Menjaga kadar cairan tubuh atau mencegah dehidrasi, sehingga tubuh tidak mengalami gangguan pada fungsi pencernaan dan penyerapan makanan, sirkulasi, ginjal, dan penting dalam mempertahankan suhu tubuh yang normal.",
+        "size": "sm",
+        "wrap": true,
+        "margin": "lg"
+      }
+    ]
+  }
+}

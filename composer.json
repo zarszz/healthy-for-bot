@@ -1,0 +1,16 @@
+{
+    "name": "ganjarggt/healthy-for-bot-project",
+    "description": "simple line bot with php",
+    "type": "Project",
+    "require": {
+        "php": "^7.2",
+        "slim/slim": "^3.11",
+        "linecorp/line-bot-sdk": "^3.6"
+    },
+    "authors": [
+        {
+            "name": "zarszz",
+            "email": "zarszzntunx@gmail.com"
+        }
+    ]
+}

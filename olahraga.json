@@ -1,0 +1,43 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "MANFAAT OLAHRAGA",
+        "align" : "center",
+        "weight": "bold"
+      }
+    ]
+  },
+  "hero": {
+    "type": "image",
+    "url": "https://i.ibb.co/6vyCtJN/lari.jpg",
+    "size": "full",
+    "aspectRatio": "4:3",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "KENAPA HARUS OLAHRAGA ?",
+        "align" : "center",
+        "size": "sm",
+        "color": "#c9302c",
+        "weight": "bold"
+      },
+      {
+        "type": "text",
+        "text": "Olahraga adalah aktifitas fisik yang sangat bermanfaat bagi manusia, beberapa manfaat olahraga seperti mencegah penyakit jantung, mengedalikan gula darah, menurunkan darah tinggi, memperbaiki suana hati, dan mengatasi stress.",
+        "size": "sm",
+        "wrap": true,
+        "margin": "lg"
+      }
+    ]
+  }
+}
