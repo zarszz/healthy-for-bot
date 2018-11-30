@@ -6,7 +6,7 @@ menggunakan metode webhook dan di deploy pada heroku
 
 mungkin masih sangat sangat sederhana, untuk kedepannya saya akan framework code igniter
 
-untuk mencobanya, silahkan bisa dengan menambahkannya menjadi teman,
+untuk mencobanya, bisa menambahkannya menjadi teman,
 id : @vyv5975x
         
         
