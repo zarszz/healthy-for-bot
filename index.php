@@ -20,13 +20,11 @@ $bot = new LINEBot($httpClient, ['channelSecret' => $channel_secret]);
 $configs =  ['settings' => ['displayErrorDetails' => true],];
 $app = new Slim\App($configs);
 
-$app->get('/', function($req, $res)
-{
+$app->get('/', function($req, $res){
   echo "hello, world !!";
 });
 
-$app->get('/content/{messageId}', function($req, $res) use ($bot)
-{
+$app->get('/content/{messageId}', function($req, $res) use ($bot){
     $route      = $req->getAttribute('route');
     $messageId = $route->getArgument('messageId');
     $result = $bot->getMessageContent($messageId);
@@ -35,34 +33,22 @@ $app->get('/content/{messageId}', function($req, $res) use ($bot)
  
     return $res->withHeader('Content-Type', $result->getHeader('Content-Type'));
 });
-
- 
-$app->post('/webhook', function ($request, $response) use ($bot, $pass_signature, $httpClient)
-{
+$app->post('/webhook', function ($request, $response) use ($bot, $pass_signature, $httpClient){
     $body        = file_get_contents('php://input');
     $signature = isset($_SERVER['HTTP_X_LINE_SIGNATURE']) ? $_SERVER['HTTP_X_LINE_SIGNATURE'] : '';
- 
- 
     file_put_contents('php://stderr', 'Body: '.$body);
- 
-    if($pass_signature === false)
-    {
-
-        if(empty($signature))
-        {
+    if($pass_signature === false){
+        if(empty($signature)){
             return $response->withStatus(400, 'Signature not set');
         }
  
-        if(! SignatureValidator::validateSignature($body, $channel_secret, $signature))
-        {
+        if(! SignatureValidator::validateSignature($body, $channel_secret, $signature)){
             return $response->withStatus(400, 'Invalid signature');
         }
     } 
- 
     $data = json_decode($body, true);
     if(is_array($data['events'])){
         foreach ($data['events'] as $event){
-
                 $textmessageFromUser = $event['message']['text']; 
                 if(strtolower($textmessageFromUser) == "help"){
                     $multiMessageBuilder = new MultiMessageBuilder();
